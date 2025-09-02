@@ -5,7 +5,7 @@ import "testing"
 func TestGreet( t *testing.T) {
 	want := "Hello, World!"
 
-	got := greet()
+	got := greet("fr")
 
 	if got != want {
 		// mark this test as failed
