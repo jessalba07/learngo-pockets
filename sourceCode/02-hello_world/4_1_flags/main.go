@@ -24,6 +24,7 @@ var phrasebook = map[language]string{
 	"fr": "Bonjour le monde",  // French
 	"he": "שלום עולם",         // Hebrew
 	"ur": "ہیلو دنیا",         // Urdu
+	"tl": "Kumusta mundo", // Vietnamese
 	"vi": "Xin chào Thế Giới", // Vietnamese
 }
 

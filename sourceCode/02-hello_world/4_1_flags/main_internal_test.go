@@ -15,6 +15,10 @@ func TestGreet(t *testing.T) {
 	}
 
 	var tests = map[string]testCase{
+		"Akkadian, not supported": {
+			lang: "akk",
+			want: `unsupported language: "akk"`,
+		},
 		"English": {
 			lang: "en",
 			want: "Hello world",
@@ -22,10 +26,6 @@ func TestGreet(t *testing.T) {
 		"French": {
 			lang: "fr",
 			want: "Bonjour le monde",
-		},
-		"Akkadian, not supported": {
-			lang: "akk",
-			want: `unsupported language: "akk"`,
 		},
 		"Greek": {
 			lang: "el",
@@ -38,6 +38,10 @@ func TestGreet(t *testing.T) {
 		"Urdu": {
 			lang: "ur",
 			want: "ہیلو دنیا",
+		},
+		"Tagalog": {
+			lang: "tl",
+			want: "Kumusta mundo",
 		},
 		"Vietnamese": {
 			lang: "vi",
